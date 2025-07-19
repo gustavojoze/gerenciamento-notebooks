@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque VUN</title>
+    <link rel="stylesheet" href="pagina-cadastro-style.css">
+</head>
+<body>
+    <header>
+        <!-- <img src="./assets/icon-filters.png" alt="" > -->
+        
+        <a href="../home/index.html"><img src="./assets/logo-vunesp.png" alt="logo vunesp" class="logo-vunesp"></a>
+        
+        <div class="container-input">
+            <input type="text" placeholder="Pesquisar" class="header-input">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="input-iconSearch" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+            <!-- <img src="./assets/icon-lupa.png" alt="fdsf" class="input-iconSearch">  -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="" >
+                    <!-- <img class="nav-icon-addNotebook" src="./assets/icon-adicionarNotebook.png" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="icon nav-icon-addNotebook" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                      </svg>
+                </a></li>
+                <li>  <div class="select-buttons">
+                    <button class="select-button  cancel">
+                        Selecionar Tudo
+                    </button>
+                    <button class="select-button  concluite" >
+                        Concluir 
+                    </button>
+                   </div></li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="icon nav-icon-select" viewBox="0 0 16 16">
+                        <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                        <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                      </svg></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-formulario">
+            <h1 class="formulario-titulo">Adicione um notebook:</h1>
+           
+            <form action="" class="formulario-container-inputs">
+            <div>
+                <label for="">Nome do VUN</label>
+            <input type="text" class="formulario-input" id="VUN">
+            </div>
+            <div>
+            <label for="">Modelo</label>
+            <input type="text" class="formulario-input" id="Modelo">
+            </div>
+            <div>
+            <label for="">Status</label>
+            <input type="text" class="formulario-input" id="Status">
+            </div>
+            <div>
+            <label for="">Disco</label>
+            <input type="text" class="formulario-input" id="Disco">
+            </div>
+            <div>
+            <label for="Sistema">Sistema</label>
+            <input type="text" class="formulario-input" id="Sistema" name="Sistema">
+            </div>
+            <div>
+            <label for="">Numero de Serie</label>
+            <input type="text" class="formulario-input" id="NumeroSerie">
+            </div>
+            <div>
+            <label for="">Observações</label>
+            <textarea resize="none" name="" id="Observacoes" class="formulario-input formulario-textarea"></textarea>
+             </div>
+            <div>
+            <button type="submit" class="formulario-btn formulario-btnConcluite">Concluir</button>   
+            <button type="submit" class="formulario-btn formulario-btnDelete">Deletar</button>                
+            <button type="submit" class="formulario-btn formulario-btnAltere">Alterar</button>                
+            <button class="formulario-btn formulario-btnCancel">Cancelar</button>
+            </div>
+            </div>
+            </form>
+        </section>
+        
+    </main> 
+    <script src=".\pagina-cadastro.js"></script>
+</body>
+</html>

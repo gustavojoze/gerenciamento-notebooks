@@ -1,0 +1,640 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body{
+height: 100vh;
+overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: #ffff;
+    box-shadow: 0 0 40px;
+    z-index: 1;
+}
+
+.icon:hover{
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 12px;
+    padding:2px;
+    cursor: pointer;
+    
+}
+
+.icon-filters{
+    position: absolute;
+    left: 20px;
+    }
+    
+.logo-vunesp{
+    width: 200px;
+    height: 90px;
+    padding: 10px;
+}
+
+.container-input{
+    position: relative;
+    width: 400px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+.container-input input{
+    border: none;
+    outline: none;
+    position: absolute;
+    padding-left: 8px;
+    border-radius: 12px;
+    right: 0;
+    left: 0;
+}
+
+.container-input .input-iconSearch{
+    position: absolute;
+    right: 6px;
+    top:3px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav ul li{
+    list-style: none;
+}
+
+
+.select-buttons{
+    display: none;
+}
+.select-button{
+    border: none;
+    padding: 5px;
+    background-color: #0070f3;
+    color: #ffff;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    display: flex;
+    background-color: gray;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.filters-disable{
+    display: none;
+    height: 100%;
+}
+.filters {
+    width: 250px;
+    height: 100%;
+    flex: 1;
+    background-color: #f4f4f4;
+    border-right: 2px solid #ccc;
+    position: relative;
+}
+.filters 
+.filters-group{
+width: 100%;
+padding:10px 0 0 10px ;
+max-height: 83%;
+border-right: 2px solid #ccc;
+background-color: #eae5e5;
+overflow: auto;
+}
+
+.filters-iconBack{
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    
+}
+.filters .title-filters {
+    font-size: 1.5em;
+   margin: 30px 0 20px 10px;
+}
+.filter-selectProjeto{
+    overflow: auto;
+}
+.filter-group {
+    margin-bottom: 20px;
+    
+}
+.filter-group h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.filter-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+.range-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.filter-group input[type="range"] {
+    width: 100%;
+}
+.filter-clean-btn {
+    margin: 10px 10px 10px 10px;
+    padding: 7px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-main{
+ width: 100%;
+ height: 100vh;
+ margin:0 auto;
+}
+
+
+.section-main-formaExibir{
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    margin: 12px;
+}
+.container-formaExibir {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 53px;
+    height: 33px;
+}
+.icon-formaExibir:hover{
+    background-color: rgba(128, 128, 128, 0.308);
+    cursor: pointer;
+}
+
+
+
+.section-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: gray;
+    gap: 10px;
+    padding-bottom: 180px;
+    height: 100%;
+    overflow: scroll;
+}
+::-webkit-scrollbar-track-piece  {
+    border-radius: 12px;
+ }
+ ::-webkit-scrollbar-track {
+    background-color: rgb(87, 87, 87);
+}
+::-webkit-scrollbar {
+    width: 9px;
+    background: #acacacbe;
+}
+::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 12px;
+}
+
+
+
+
+.container-card{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px ;
+    border-radius: 12px;
+    position: relative;
+}
+.card-cicle-status{
+    width: 100px;
+    height: 5px;
+    margin: 0 auto;
+    background-color: green;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.card-select{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+ #card-select:hover{
+    background-color: rgb(252, 130, 177);
+}
+
+
+.card-select-disable{
+    display: none;
+}
+.container-card .card-img{
+    width: 280px;
+    height: 230px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+ 
+ .card-img:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+
+.container-card-diseble{
+    opacity:1;
+}
+.container-card-selecionar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00000011;
+    z-index: -3;
+}
+
+
+
+.card-status{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: green;
+}
+.container-card .card-observacoes{
+    text-align: center;
+    display: -webkit-box;     
+    -webkit-line-clamp: 2;            
+    -webkit-box-orient: vertical; 
+    overflow: hidden;     
+    text-overflow: ellipsis;          
+    word-wrap: break-word;   
+}
+
+.card-cicle-status-diseble{
+    background-color: red;
+}
+.card-status-diseble{
+    color: red;
+} 
+
+
+
+ .container-card-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: nowrap;
+    width: 500px;
+    height:180px;
+    background-color: white;
+    padding: 10px ;
+    border-radius: 12px;
+    position: relative;
+}
+.container-card-horizontal .card-img{
+    width: 100px;
+    height: 100px;
+    margin-right: 100px;
+}
+.card-img-horizontal{
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.card-img-horizontal img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+ 
+ .card-img-horizontal:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+
+.card-img-horizontal img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.card-info{
+    width: 50%;
+}
+.container-card-diseble-horizontal,
+.card-status-horizontal,
+.container-card-horizontal .card-observacoes-horizontal,
+.card-cicle-status-diseble-horizontal,
+.card-status-diseble-horizontal {
+    text-align: left;
+}
+.card-status-horizontal-diseble{
+   text-align: left;
+   margin: 0;
+    color: red;
+}
+.card-status-horizontal{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: green;
+}
+.card-observacoes-horizontal{
+    display: -webkit-box;     
+    -webkit-line-clamp: 3;            
+    -webkit-box-orient: vertical; 
+    overflow: hidden;     
+    text-overflow: ellipsis;          
+    word-wrap: break-word;   
+}
+
+
+
+
+
+
+
+
+
+.section-cards-modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.438);
+    overflow: auto;
+    z-index: 1;
+}
+ .cards-modal{
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    background-color: #f0ecec;
+    padding: 30px;
+    position:relative;
+}
+.cards-modal-iconClose{
+    position:absolute;
+    text-align: center;
+    right: 10px;
+    top:10px;
+}
+.formulario-titulo{
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.formulario-resposta{
+    margin-top: 10px;
+    font-size:15px;
+}
+
+.formulario-container-inputs{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: block;
+    margin-left: 5px;
+}
+
+.formulario-input{
+ width: 100%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-left:10px ;
+    margin-top: 2px;
+    margin-bottom:20px ;
+}
+.formulario-textarea {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-left:10px ;
+    margin-top: 2px;
+    margin-bottom:20px ;
+    resize: none;
+}
+.formulario-btn { 
+    display: inline;
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: #0070f3;
+    color: #ffff;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+ 
+.formulario-btnDelete{
+    background-color: rgb(223, 16, 16)
+
+}
+.formulario-btnDelete:hover{
+    background-color: rgb(236, 28, 28);
+    cursor: pointer;
+}
+
+
+.formulario-btnAltere{
+    background-color: rgb(240, 187, 43);
+}
+.formulario-btnAltere:hover{
+    background-color: rgb(250, 187, 14);
+    cursor: pointer;
+}
+
+  
+
+
+
+
+
+
+
+.section-modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+.container-modal{
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f0ecec;
+    text-align: center;
+}
+.modal-containerListVuns{
+    height:200px;
+    border-radius: 10px;
+    background-color: white;
+    overflow-y: scroll;
+    
+}
+.modal-input{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+.modal-btn { 
+    display: inline;
+    border: none;
+    width: 100px;
+    height: 35px;
+    background-color: #0070f3;
+    color: #ffff;
+    border-radius: 20px;
+}
+
+ .modal-btnCancel{
+    background-color: red;
+}  
+
+@media (min-width:1200px) {
+    .section-cards-modal{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.438);
+        overflow: auto;
+        z-index: 1;
+        /* padding-top: 250px;
+        padding-bottom: 100px; */
+    }
+    .cards-modal{
+        width:1000px;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        background-color: #f0ecec;
+        padding: 30px;
+        /* margin-top: 100px; */
+        position:relative;
+    }
+
+    .filters{
+        width: 300PX;
+        padding-bottom: 90px;
+    }
+    .filters-group{
+        height: 100%;
+    }
+    .filter-clean-btn{
+        width: 200px;
+    }
+  }
