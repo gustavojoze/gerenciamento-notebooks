@@ -21,7 +21,7 @@ function escolherModoExibicaoCard(notebook) {
             <div class="card-cicle-status"></div>
             <input class="card-select-disable" type="checkbox" id="card-select">
             <div class="card-img">
-                <img src="http://localhost:8000/api/images=${notebook.Modelo}" alt="Imagem" title="Detalhe" loading="lazy">
+                <img src="http://gerenciamento-notebooks-api.onrender.com/api/images=${notebook.Modelo}" alt="Imagem" title="Detalhe" loading="lazy">
             </div>
             <h2 class="card-name">${notebook.VUN}</h2>
             <h4 class="card-marca">${notebook.Modelo}</h4>
@@ -35,7 +35,7 @@ function escolherModoExibicaoCard(notebook) {
         <div class="container-card container-card-horizontal" title="${notebook.NumeroSerie}">
             <div class="card-img card-img-horizontal"> 
                 <div class="card-cicle-status card-cicle-status-horizontal"></div>
-                <img src="http://localhost:8000/api/images=${notebook.Modelo}" alt="Imagem" title="Detalhe" loading="lazy">
+                <img src="http://gerenciamento-notebooks-api.onrender.com/api/images=${notebook.Modelo}" alt="Imagem" title="Detalhe" loading="lazy">
             </div>
             <div class="card-info">
                 <input class="card-select-disable card-select-disable-horizontal" type="checkbox" id="card-select">

@@ -11,7 +11,7 @@ function verificarRespostaDaApi(resposta){
 }
 
 
-const URLbase = 'http://localhost:8000'
+const URLbase = 'http://gerenciamento-notebooks-api.onrender.com'
 
 export async function listarNotebooks() {
     const pegarLista = await fetch(`${URLbase}/api/lista_notebook`)

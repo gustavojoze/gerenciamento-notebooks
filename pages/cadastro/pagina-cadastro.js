@@ -15,7 +15,7 @@ function verificarRespostaDaApi(resposta){
 
 let atributos = []
 
-const acessoApi = 'http://localhost:8000'
+const acessoApi = 'http://gerenciamento-notebooks-api.onrender.com'
 
 
 async function adicionarNotebook(vun, modelo, status, armazenamento, sistema, NSerie, Observacoes) {
