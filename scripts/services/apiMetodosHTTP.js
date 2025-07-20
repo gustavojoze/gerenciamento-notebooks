@@ -11,14 +11,13 @@ function verificarRespostaDaApi(resposta){
 }
 
 
-const URLbase = 'http://gerenciamento-notebooks-api.onrender.com'
+const URLbase = 'https://gerenciamento-notebooks-api.onrender.com'
 
 export async function listarNotebooks() {
     const pegarLista = await fetch(`${URLbase}/api/lista_notebook`)
     const json = await pegarLista.json()
     const notebooks = json.maquinas.Notebooks
     return notebooks
-    
 }    
 
 export async function atualizarStatus(vun, Status) {

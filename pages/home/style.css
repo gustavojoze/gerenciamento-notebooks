@@ -608,13 +608,16 @@ label{
         background-color: rgba(0, 0, 0, 0.438);
         overflow: auto;
         z-index: 1;
+        padding: 80px;
         /* padding-top: 250px;
         padding-bottom: 100px; */
     }
     .cards-modal{
-        width:1000px;
+        width:700px;
+        height: 560px;
+        overflow: auto;
         border-radius: 10px;
-        padding: 10px;
+        padding-top: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -622,14 +625,12 @@ label{
         gap: 10px;
         position: relative;
         background-color: #f0ecec;
-        padding: 30px;
-        /* margin-top: 100px; */
         position:relative;
     }
 
     .filters{
-        width: 300PX;
-        padding-bottom: 90px;
+        width: 300px;
+        padding-bottom: 150px;
     }
     .filters-group{
         height: 100%;

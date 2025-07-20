@@ -6,10 +6,13 @@ const iconExcel = document.querySelector('.nav-icon-excel')
 
 const gerarPlanilha = (notebooks) => {
     const dados = notebooks.map(notebook => ({
-        ID: notebook.id,
-        Nome: notebook.Nome,
-        Status: notebook.Status,
-        Observacoes: notebook.Observacoes || 'N/A'
+                VUN: notebook.VUN,
+                Modelo: notebook.Modelo,
+                Sistema: notebook.Sistema,
+                Disco: notebook.Disco,
+                Observacoes: notebook.Observacoes,
+                Status: notebook.Status,
+                NumeroSerie: notebook.NumeroSerie
     }));
 
     // Cria a planilha

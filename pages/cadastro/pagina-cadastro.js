@@ -15,11 +15,11 @@ function verificarRespostaDaApi(resposta){
 
 let atributos = []
 
-const acessoApi = 'http://gerenciamento-notebooks-api.onrender.com'
+const URLbase = 'https://gerenciamento-notebooks-api.onrender.com'
 
 
 async function adicionarNotebook(vun, modelo, status, armazenamento, sistema, NSerie, Observacoes) {
-    const url = `${acessoApi}/api/cadastro`;
+    const url = `${URLbase}/api/cadastro`;
     try {
         const colocarNotebook = await fetch(url, {
             method: "POST",
@@ -65,7 +65,7 @@ botaoConcluir.addEventListener('click', async (event) => {
 
 
 async function removerNotebook(vun) {
-    const url = `${acessoApi}/api/remove_notebook`;
+    const url = `${URLbase}/api/remove_notebook`;
     try {
         const removerNotebook = await fetch(url, {
             method: "DELETE",
@@ -106,7 +106,7 @@ botaoDelete.addEventListener('click', async (event) => {
 
 
 async function alterarNotebook(vun, modelo, status, armazenamento, sistema, NSerie, Observacoes) {
-    const url = `${acessoApi}/api/update_notebook=${vun}`;
+    const url = `${URLbase}/api/update_notebook=${vun}`;
 
  try{   const atualizarLista = await fetch(url, {
         method: "PUT",
@@ -150,7 +150,7 @@ botaoAlterar.addEventListener('click', async (event) => {
 
 
 async function pesquisarNotebook(vun) {
-    const url = `${acessoApi}/api/info_notebook=${vun}`;
+    const url = `${URLbase}/api/info_notebook=${vun}`;
     try {
         const acharNotebook = await fetch(url, {
             method: "GET",
