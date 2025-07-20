@@ -595,7 +595,7 @@ label{
     background-color: red;
 }  
 
-@media (min-width:1200px) {
+@media (max-width:1440px) {
     .section-cards-modal{
         display: none;
         justify-content: center;
@@ -638,4 +638,15 @@ label{
     .filter-clean-btn{
         width: 200px;
     }
+  }
+
+  @media (max-width:950px) {
+  .logo-vunesp{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+
   }
