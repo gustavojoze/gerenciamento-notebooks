@@ -45,8 +45,8 @@ header{
     left: 20px;
     }
     
-.logo-vunesp{
-    width: 200px;
+.logo-empresa{
+    width: 90px;
     height: 90px;
     padding: 10px;
 }
@@ -641,9 +641,9 @@ label{
   }
 
   @media (max-width:950px) {
-  .logo-vunesp{
-    width: 100px;
-    height: 50px;
+  .logo-empresa{
+    width: 330px;
+    height: 330px;
     padding: 10px;
     margin-left: 50px;
 }
