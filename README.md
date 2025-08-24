@@ -52,7 +52,7 @@
 - Colocar o status do(s) notebook(s) ao tira-lo do estoque
 - Pesquisar notebooks
 - Alterar e verificar as infomações dos notebook(s) clicando nele
-- Filtros para conseguir achar o notebook(s) de forma mais rapido
+- Filtros para achar o notebook(s) de forma mais rapido
 - Crud completo dos notebooks
 
 ---
