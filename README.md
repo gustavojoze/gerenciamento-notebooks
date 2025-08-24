@@ -1,6 +1,6 @@
 # 💻 Gerenciamento de Notebooks - Frontend
 
-Este repositório contém o **frontend** do sistema de gerenciamento de notebooks. A ideia do projeto, surgiu em meu estagio, onde os notebooks eram enviados para projetos da empresa. O gerencimaento era feito por uma planilha em excel. Com isso, criei o sisteme para gerenciar os notebooks de uma forma mais otimizada, colocando imagens, filtros, pesquisas otimizadas e adicionando o crud para os notebooks. Assim, facilitando o trabalho ao administrar os notebooks.
+#### Este repositório contém o **frontend** do sistema de gerenciamento de notebooks. A ideia do projeto, surgiu em meu estagio, onde os notebooks eram enviados para os projetos da empresa. O gerencimaento era feito por meio de uma planilha em excel. Com isso, criei o sisteme para gerenciar os notebooks de uma maneira mais otimizada, colocando imagens, filtros, pesquisas otimizadas e adicionando o crud para os notebooks. Assim, facilitando o trabalho ao administra-los.
 ---
 
 ## 🚀 Tecnologias Utilizadas
