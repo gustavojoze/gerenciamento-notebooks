@@ -642,11 +642,42 @@ label{
 
   @media (max-width:950px) {
   .logo-empresa{
-    width: 330px;
-    height: 330px;
+    width: 60px;
+    height: 60px;
     padding: 10px;
     margin-left: 50px;
 }
 
 
   }
+    @media (max-width:768px) {
+        header{
+           gap: 20px;
+        }
+        .container-input{
+    position: relative;
+    width: 400px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+.container-input input{
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.container-input .input-iconSearch{
+    display: none;
+}
+
+.filters {
+        width: 300px;
+        padding-bottom: 40px;
+    }
+    }
